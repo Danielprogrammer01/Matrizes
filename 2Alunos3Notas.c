@@ -12,8 +12,8 @@ int main()
     int i;
     int j;
     int quantidade = 2; //QUANTIDADE DE NOMES
-    int linha = 2; //NOMES
-    int coluna = 3; //NOTAS
+    int linha = 2;
+    int coluna = 3; 
     float notas [linha] [coluna]; // MATRIZ
     char nome [quantidade] [200]; //VETOR TIPO STRING
 
