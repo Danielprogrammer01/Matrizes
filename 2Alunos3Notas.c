@@ -11,7 +11,7 @@ int main()
 
     int i;
     int j;
-    int quantidade = 2;
+    int quantidade = 2; //QUANTIDADE DE NOMES
     int linha = 2; //NOMES
     int coluna = 3; //NOTAS
     float notas [linha] [coluna]; // MATRIZ
