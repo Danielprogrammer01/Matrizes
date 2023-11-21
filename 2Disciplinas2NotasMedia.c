@@ -17,8 +17,9 @@ int main()
     int coluna = quantidadeNotas; 
     char disciplina [quantidadeDisciplinas] [200];
     float notas [linha] [coluna];
-    int soma = 0;
+    float soma = 0;
     float media[quantidadeDisciplinas];
+    char situacao [quantidadeDisciplinas] [200];
 
     for (i = 0; i < quantidadeDisciplinas; i++)
     {
@@ -34,7 +35,9 @@ int main()
             soma += notas[i][j];
         }
 
-        media[i] = (float)soma / (float) j;
+        media[i] = soma / (float)quantidadeNotas;
+
+
         soma = 0;
 
         setbuf(stdin, 0);
@@ -56,6 +59,21 @@ int main()
         }
 
         printf("\nMédia: %.1f", media[i]);
+
+              if (media[i] >= 7.0)
+        {
+            strcpy(situacao[i],"Aprovado!");
+        }
+        else if (media[i] >= 5.0)
+        {
+            strcpy(situacao[i], " Em Recuperação!");
+        }
+        else
+        {
+            strcpy(situacao[i], "Reprovado!");
+        }
+
+        printf("\nSituação do Aluno: %s", situacao[i]);
 
         setbuf(stdin, 0);
 
