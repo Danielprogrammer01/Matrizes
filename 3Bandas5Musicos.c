@@ -11,8 +11,8 @@ int main()
 
 int i;
 int j;
-int quantidadeDeBandas = 3;
-int quantidadeDeMusicos = 5;
+int quantidadeDeBandas = 2;
+int quantidadeDeMusicos = 3;
 int linha = quantidadeDeBandas;
 int coluna = quantidadeDeMusicos;
 char bandas [linha][coluna][200];
@@ -21,13 +21,13 @@ char nomeDaBanda [quantidadeDeMusicos] [200];
 for (i = 0; i < quantidadeDeBandas; i++)
     {
         
-        printf("\nDigite o nome da %dÂª banda: ", i+1);
+        printf("\nDigite o nome da %dª banda: ", i+1);
         gets(nomeDaBanda[i]);
 
         for (j = 0; j < quantidadeDeMusicos; j++)   
         {
 
-            printf("\nDigite o nome do %dÂª integrante:", j+1);
+            printf("\nDigite o nome do %dª integrante:", j+1);
             gets(bandas[i][j]);
         
         }
@@ -43,13 +43,13 @@ for (i = 0; i < quantidadeDeBandas; i++)
     for (i = 0; i < quantidadeDeBandas; i++)
     {
         
-        printf("\n%dÂª Banda: %s", i+1, nomeDaBanda[i]);
+        printf("\n%dª Banda: %s", i+1, nomeDaBanda[i]);
         printf("\n");
 
         for (j = 0; j < quantidadeDeMusicos; j++)   
         {
 
-            printf("\n%dÂª Integrante: %s", j+1, bandas[i][j]);
+            printf("\n%dª Integrante: %s", j+1, bandas[i][j]);
         
         }
 
